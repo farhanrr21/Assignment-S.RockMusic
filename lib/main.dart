@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
   final List<Widget> _pages = [
     const HomeScreen(),
     const Center(
-        child: Text('Search Page',
+        child: Text('News Page',
             style: TextStyle(fontSize: 30, color: Colors.white))),
     const Center(
         child: Text('TrackBox Page',
