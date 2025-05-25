@@ -1,17 +1,29 @@
-# srock_music
+# S.Rock Music App
 
-A new Flutter project.
+**by Farhan Ryan Rafli**
 
-## Getting Started
+## Overview
 
-This project is a starting point for a Flutter application.
+This is an Assignment Brief Challenge by S.Rock Music Company
 
-A few resources to get you started if this is your first Flutter project:
+## Architecture
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- **MVVM** (Model-View-ViewModel)
+  - **HomeScreen**: Displays the main page with a search bar, hero section, and cards for various services.
+  - **Card Detail Screen**: Displays the details of a service when a card is tapped.
+  - **HomeViewModel**: Handles the app's logic, fetching data from Firebase Firestore.
+  - **Model**: Defines the data structure for the services.
+  - **Repository**: Fetches the data from Firebase Firestore and passes it to the `HomeViewModel`.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
->>>>>>> master
+## Approach
+
+My approach started by **slicing the UI components** that were **unrelated** to Firebase. This allowed me to focus on the layout and design of the home screen and card components. Afterward, I shifted focus to integrating **Firebase Firestore**, where I fetched the service data, which I then displayed on the cards.
+
+## Features
+
+- **MVVM Architecture**: Clean separation between UI, data, and logic.
+- **Firebase Firestore Integration**: Data for services is fetched in real-time from Firebase.
+- **Tappable Cards**: Each service card navigates to a detailed view showing the tapped service.
+- **Responsive UI**: The app adapts to various screen sizes and orientations.
+
+P.S.: Kinda having fun with this one because i learn a lot for implementing the MVVM and Provider, Thanks S.Rock for this Challenge 🙏
